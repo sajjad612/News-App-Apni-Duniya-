@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/aajtak"
+            android:title="@string/Aaj_tak"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/indiatv"
+            android:icon="@drawable/indiatv"
+            android:title="@string/IndiaTV"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/ndtv"
+            android:icon="@drawable/ndtv"
+            android:title="@string/NDTV"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/abp"
+            android:icon="@drawable/abp"
+            android:title="@string/ABP"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/zee"
+            android:icon="@drawable/zee"
+            android:title="@string/Zee_News"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/indiatoday"
+            android:icon="@drawable/indiatoday"
+            android:title="@string/India_Today"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/news18"
+            android:icon="@drawable/news18"
+            android:title="@string/News_18"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/timesnow"
+            android:icon="@drawable/timesnow"
+            android:title="@string/Times_Now"
+            android:menuCategory="secondary"/>
+    </group>
+    <item android:title="English News Channel"
+        android:menuCategory="secondary">
+        <menu>
+            <item
+                android:id="@+id/ny"
+                android:icon="@drawable/nyt"
+                android:title="New Yorks Times"
+                />
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/aljazeera"
+                android:title="@string/Aljazeera"
+                android:menuCategory="secondary"/>
+            <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/cnn"
+                android:title="@string/CNN"
+                android:menuCategory="secondary"/>
+        </menu>
+    </item>
+</menu>

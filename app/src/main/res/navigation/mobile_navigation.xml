@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.news.ui.aljazeera.HomeFragment"
+        android:label="@string/Aljazeera"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.news.ui.cnn.GalleryFragment"
+        android:label="@string/CNN"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.news.ui.aajtak.SlideshowFragment"
+        android:label="@string/Aaj_tak"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/indiatv"
+        android:name="com.example.news.fragments.indiatv"
+        android:label="@string/IndiaTV"
+        tools:layout="@layout/fragment_indiatv" />
+    <fragment
+        android:id="@+id/ndtv"
+        android:name="com.example.news.fragments.ndtv"
+        android:label="@string/NDTV"
+        tools:layout="@layout/fragment_ndtv" />
+    <fragment
+        android:id="@+id/ny"
+        android:name="com.example.news.fragments.times"
+        android:label="@string/New_York_Times"
+        tools:layout="@layout/fragment_times" />
+    <fragment
+        android:id="@+id/abp"
+        android:name="com.example.news.fragments.abp"
+        android:label="@string/ABP"
+        tools:layout="@layout/fragment_abp" />
+    <fragment
+        android:id="@+id/zee"
+        android:name="com.example.news.fragments.zee"
+        android:label="@string/Zee_News"
+        tools:layout="@layout/fragment_zee" />
+    <fragment
+        android:id="@+id/timesnow"
+        android:name="com.example.news.fragments.timesnow"
+        android:label="@string/Times_Now"
+        tools:layout="@layout/fragment_timesnow" />
+    <fragment
+        android:id="@+id/news18"
+        android:name="com.example.news.fragments.news18"
+        android:label="@string/News_18"
+        tools:layout="@layout/fragment_news18" />
+    <fragment
+        android:id="@+id/indiatoday"
+        android:name="com.example.news.fragments.indiatoday"
+        android:label="@string/India_Today"
+        tools:layout="@layout/fragment_indiatoday" />
+</navigation>
