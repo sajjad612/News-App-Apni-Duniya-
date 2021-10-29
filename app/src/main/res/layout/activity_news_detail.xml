@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NewsDetailActivity">
+
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black_shade_1"
-        app:titleTextColor="@color/yellow"
-        app:title="News App"
-        android:id="@+id/toolbar"
-        />
+        app:title="Apni Duniya"
+        app:titleTextColor="@color/yellow" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

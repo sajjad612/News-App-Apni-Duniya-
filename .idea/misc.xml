@@ -4,9 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/activity_category_main.xml" value="0.2212962962962963" />
+        <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/activity_choose_category.xml" value="0.176" />
         <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/activity_dashboard.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/activity_login.xml" value="0.23703703703703705" />
-        <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/categories_rv_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/activity_news_detail.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/activity_signup.xml" value="0.25316455696202533" />
+        <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/app_bar_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/categories_rv_item.xml" value="1.0" />
+        <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/content_main.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/fragment_abp.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/fragment_indiatoday.xml" value="0.25416666666666665" />
@@ -16,7 +22,9 @@
         <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/fragment_timesnow.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/fragment_zee.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/nav_header_main.xml" value="0.23703703703703705" />
+        <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/layout/news_rv_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/menu/activity_main_drawer.xml" value="0.23703703703703705" />
+        <entry key="..\:/Users/sajja/AndroidStudioProjects/News/app/src/main/res/menu/main.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

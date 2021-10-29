@@ -6,14 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
-import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -25,9 +24,10 @@ import org.jetbrains.annotations.NotNull;
 
 public class Login extends AppCompatActivity {
 
-    TextView TVskip;
-    Button BTNsignup,BTNlogin;
+    TextView TVskip,TVsignup;
+    Button BTNlogin;
     TextInputLayout username_var,password_var;
+    ProgressBar PBLogin;
 
 
     @Override
@@ -38,13 +38,13 @@ public class Login extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         BTNlogin = findViewById(R.id.btnLogin);
-        BTNsignup = findViewById(R.id.btnSignUp);
+        TVsignup = findViewById(R.id.tvSignUp);
 
         TVskip = findViewById(R.id.TVSkip);
 
         username_var = findViewById(R.id.username_text_field_design);
         password_var = findViewById(R.id.password_input_field);
-
+        PBLogin = findViewById(R.id.PBlogin);
 
 
         BTNlogin.setOnClickListener(new View.OnClickListener() {
@@ -52,6 +52,8 @@ public class Login extends AppCompatActivity {
             public void onClick(View v) {
              String username = username_var.getEditText().getText().toString();
              String password = password_var.getEditText().getText().toString();
+
+             PBLogin.setVisibility(View.VISIBLE);
 
              if (!username.isEmpty()){
                  username_var.setError(null);
@@ -67,6 +69,8 @@ public class Login extends AppCompatActivity {
                      DatabaseReference databaseReference = firebaseDatabase.getReference("datauser");
 
                      Query check_username = databaseReference.orderByChild("username").equalTo(username_data);
+
+
 
                      check_username.addListenerForSingleValueEvent(new ValueEventListener() {
                          @Override
@@ -92,7 +96,7 @@ public class Login extends AppCompatActivity {
                              }else{
                                  username_var.setError("User does not Exist");
                              }
-
+                             PBLogin.setVisibility(View.GONE);
 
                          }
 
@@ -115,7 +119,7 @@ public class Login extends AppCompatActivity {
 
 
 
-        BTNsignup.setOnClickListener(new View.OnClickListener() {
+        TVsignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intend = new Intent(Login.this,Signup.class);

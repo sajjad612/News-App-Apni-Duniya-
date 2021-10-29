@@ -17,7 +17,7 @@
         android:layout_gravity="center|right"
         android:layout_marginTop="10dp"
         android:fontFamily="casual"
-        android:text="SKIP"
+        android:text="SKIP FOR NOW"
         android:textColor="#021C30"
         android:textSize="16sp"
         android:textStyle="bold" />
@@ -61,6 +61,14 @@
         android:layout_marginBottom="20dp"
         android:orientation="vertical">
 
+        <ProgressBar
+            android:id="@+id/PBlogin"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -83,8 +91,7 @@
             android:id="@+id/password_input_field"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:hint="Password"
-            app:passwordToggleEnabled="true"
-            app:passwordToggleTint="#BF700C">
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -127,18 +134,19 @@
         android:textSize="20dp"
         app:backgroundTint="@color/buttonbg" />
 
-    <Button
-        android:id="@+id/btnSignUp"
+    <TextView
+        android:id="@+id/tvSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="left"
+        android:layout_gravity="center"
         android:layout_marginTop="6dp"
         android:layout_marginBottom="2dp"
-        android:background="@drawable/buttongradient"
         android:elevation="5dp"
-        android:text="Sign Up"
-        android:textColor="@color/white"
-        android:textSize="20dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:gravity="center"
+        android:text="Don't have an Account ? Sign Up"
+        android:textColor="#3A6804"
+        android:textSize="24sp"
         app:backgroundTint="@color/buttonbg" />
 
 
