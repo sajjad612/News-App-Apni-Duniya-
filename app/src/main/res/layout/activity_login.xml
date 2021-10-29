@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,144 +11,169 @@
     android:orientation="vertical"
     android:layout_marginTop="40dp">
 
-    <TextView
-        android:id="@+id/TVSkip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|right"
-        android:layout_marginTop="10dp"
-        android:fontFamily="casual"
-        android:text="SKIP FOR NOW"
-        android:textColor="#021C30"
-        android:textSize="16sp"
-        android:textStyle="bold" />
 
-    <ImageView
-        android:layout_width="168dp"
-        android:layout_height="170dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="10dp"
-        android:src="@drawable/icon" />
-
-    <TextView
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        android:fontFamily="casual"
-        android:gravity="center"
-        android:text="Welcome to Apni Duniya"
-        android:textColor="@color/blue"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="7dp"
-        android:layout_marginBottom="2dp"
-        android:fontFamily="@font/aclonica"
-        android:text="Login To Continue"
-        android:textColor="@color/grey"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:orientation="vertical">
-
-        <ProgressBar
-            android:id="@+id/PBlogin"
-            style="?android:attr/progressBarStyleHorizontal"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:layout_centerInParent="true"/>
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/username_text_field_design"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="Username">
+            <TextView
+                android:id="@+id/TVSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginTop="10dp"
+                android:fontFamily="casual"
+                android:text="SKIP FOR NOW"
+                android:textColor="#021C30"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-            <com.google.android.material.textfield.TextInputEditText
+            <ImageView
+                android:layout_width="168dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/icon" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
-                android:inputType="text" />
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="Welcome to Apni Duniya"
+                android:textColor="@color/blue"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
-        </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/aclonica"
+                android:text="Login To Continue"
+                android:textColor="@color/grey"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/password_input_field"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="Password"
-            app:passwordToggleEnabled="true">
-
-            <com.google.android.material.textfield.TextInputEditText
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/PBlogin"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/username_text_field_design"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="Username">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/password_input_field"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="Password"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
                 android:layout_marginTop="2dp"
+                android:layout_marginBottom="6dp"
+                android:background="#ffffff"
+                android:elevation="5dp"
+                android:padding="0dp"
+                android:text="Forget Password"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:backgroundTint="#ffffff" />
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="6dp"
                 android:layout_marginBottom="2dp"
-                android:inputType="textPassword" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:background="@drawable/buttongradient"
+                android:elevation="5dp"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:backgroundTint="@color/buttonbg" />
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="2dp"
+                android:elevation="5dp"
+                android:fontFamily="@font/baloo_bhai"
+                android:gravity="center"
+                android:text="Don't have an Account ? Sign Up"
+                android:textColor="#3A6804"
+                android:textSize="24sp"
+                app:backgroundTint="@color/buttonbg" />
 
 
-    </LinearLayout>
 
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="6dp"
-        android:background="#ffffff"
-        android:elevation="5dp"
-        android:padding="0dp"
-        android:text="Forget Password"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        app:backgroundTint="#ffffff" />
-
-
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:layout_marginTop="6dp"
-        android:layout_marginBottom="2dp"
-        android:background="@drawable/buttongradient"
-        android:elevation="5dp"
-        android:text="Login"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        app:backgroundTint="@color/buttonbg" />
-
-    <TextView
-        android:id="@+id/tvSignUp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="6dp"
-        android:layout_marginBottom="2dp"
-        android:elevation="5dp"
-        android:fontFamily="@font/baloo_bhai"
-        android:gravity="center"
-        android:text="Don't have an Account ? Sign Up"
-        android:textColor="#3A6804"
-        android:textSize="24sp"
-        app:backgroundTint="@color/buttonbg" />
-
-
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
 </LinearLayout>
