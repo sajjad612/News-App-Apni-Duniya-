@@ -25,10 +25,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:fontFamily="@font/aclonica"
         android:text="Apni Duniya"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:fontFamily="@font/aclonica"
         android:textSize="24sp" />
 
 </LinearLayout>
